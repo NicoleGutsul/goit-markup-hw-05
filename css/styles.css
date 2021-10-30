@@ -139,7 +139,6 @@ h6 {
   border: none;
   letter-spacing: inherit;
   border-radius: 4px;
-  min-width: 200px;
   padding: 10px 32px;
   transition: color 250ms var(--timing-function);
 }
@@ -650,12 +649,50 @@ h6 {
 .works-sample {
   margin: 15px;
   width: 370px;
+  display: flex;
+  flex-direction: column;
   transition: color 250ms var(--timing-function);
+}
+
+.works-sample-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.works-sample-decoration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  pointer-events: none;
+  opacity: 1;
+  transition-property: transform, opacity;
+  transition-timing-function: var(--timing-function);
+  transition-duration: 250ms;
+}
+.works-decoration-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 322px;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--primary-white-color);
 }
 
 .works-sample:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.works-sample:hover .works-sample-decoration {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.works-sample:hover .works-decoration-text {
+  opacity: 1;
 }
 
 .works-description-container {
