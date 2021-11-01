@@ -128,6 +128,7 @@ h6 {
 
 .icon {
   fill: currentColor;
+  transition: color 250ms var(--timing-function);
 }
 
 /* Button */
@@ -153,14 +154,13 @@ h6 {
 
 .button.primary:hover,
 .button.primary:focus {
-  color: var(--common-title-color);
-  background-color: var(--secondary-white-color);
+  background-color: #188ce8;
 }
 
 .button.secondary {
   color: var(--common-title-color);
   background-color: var(--secondary-white-color);
-  transition: color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .button.secondary:hover,
@@ -316,10 +316,7 @@ h6 {
   transition: 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
 }
-.form-button:hover,
-.form-button:focus {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+
 .hero-close-button {
   position: absolute;
   display: flex;
@@ -533,7 +530,7 @@ h6 {
 /* Team */
 
 .team {
-  background-color: var(--second-white-color);
+  background-color: var(--secondary-white-color);
 }
 
 .team-item {
@@ -559,6 +556,10 @@ h6 {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.team-role {
+  margin-bottom: 16px;
 }
 
 /* Clients */
@@ -632,6 +633,7 @@ h6 {
 .footer .link-social {
   background-color: var(--svg-footer-color);
   color: var(--primary-white-color);
+  transition: background-color 250ms var(--timing-function);
 }
 
 /* Portfolio */
@@ -761,6 +763,7 @@ h6 {
 
 .team .link-social {
   color: var(--svg-social-color);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .link-social:hover,
@@ -772,6 +775,7 @@ h6 {
 .link-social.current {
   background: var(--accent-color);
   color: var(--primary-white-color);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .link-social.current:hover,
