@@ -504,7 +504,6 @@ h6 {
 
 .samples-list {
   display: flex;
-  gap: 30px;
 }
 
 .samples-item {
@@ -640,27 +639,31 @@ h6 {
 
 /* Works */
 
-.works-nav .button {
+.works-btn-list .button {
   font-weight: 500;
   font-size: var(--portfolio-font-size);
   line-height: 1.63;
 }
 
-.works-nav-list {
+.works-btn-list {
   padding: 0;
   list-style: none;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
-.works-nav-item {
+ul.works-btn-list {
+  margin-top: 0;
+}
+
+.works-btn-item {
   align-self: flex-start;
 }
 
-.works-nav-item + .works-nav-item {
+.works-btn-item + .works-btn-item {
   margin-left: 8px;
 }
 
-.works-nav .button {
+.works-btn .button {
   padding: 6px 22px;
 }
 
